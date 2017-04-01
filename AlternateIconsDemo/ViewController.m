@@ -38,13 +38,16 @@
 }
 
 - (IBAction)backToPrimaryIconAction:(UIButton *)sender {
-    [[UIApplication sharedApplication] setAlternateIconName:nil completionHandler:^(NSError * _Nullable error) {
-        if (!error) {
-            NSLog(@"成功还原图标");
-        }else{
-            NSLog(@"error:%@",error);
-        }
-    }];
+    if ([UIApplication sharedApplication].alternateIconName != nil) {//已经被替换掉了图标
+        [[UIApplication sharedApplication] setAlternateIconName:nil completionHandler:^(NSError * _Nullable error) {
+            if (!error) {
+                NSLog(@"成功还原图标");
+            }else{
+                NSLog(@"error:%@",error);
+            }
+        }];
+    }
+    
 
 }
 
