@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic,strong) NSArray * iconsArray;
 @end
 
 @implementation ViewController
@@ -17,30 +17,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    [self performSelector:@selector(changeIconAction) withObject:nil afterDelay:2];
+    _iconsArray = @[@"redIcon",@"blackIcon",@"blueIcon"];
     
 }
-- (void)changeIconAction{
+- (IBAction)changeIconButtonClick:(UIButton *)sender {
     if ([UIApplication sharedApplication].supportsAlternateIcons) {
         NSLog(@"你可以更换icon");
+        [[UIApplication sharedApplication] setAlternateIconName:_iconsArray[sender.tag] completionHandler:^(NSError * _Nullable error) {
+            if (!error) {
+                NSLog(@"成功更换为%@",_iconsArray[sender.tag]);
+            }else{
+                NSLog(@"error:%@",error);
+            }
+        }];
     }else{
         NSLog(@"非常抱歉，你不能更换icon");
         return;
     }
-    NSString * iconImageName = @"blackIcon2";
-//    if ([UIApplication sharedApplication].alternateIconName != nil) {
-//        [[UIApplication sharedApplication] setAlternateIconName:iconImageName completionHandler:^(NSError * _Nullable error) {
-//            NSLog(@"出现了错误");
-//        }];
-        //        NSLog(@"the alternate icon's name is %@")
-        
-//    }else{
-//        NSLog(@"走进了第二条 ");
-        [[UIApplication sharedApplication] setAlternateIconName:iconImageName completionHandler:^(NSError * _Nullable error) {
-            NSLog(@"成功");
-        }];
-//    }
+    
+}
+
+- (IBAction)backToPrimaryIconAction:(UIButton *)sender {
+    [[UIApplication sharedApplication] setAlternateIconName:nil completionHandler:^(NSError * _Nullable error) {
+        if (!error) {
+            NSLog(@"成功还原图标");
+        }else{
+            NSLog(@"error:%@",error);
+        }
+    }];
+
 }
 
 

@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Y-7e-NlL">
+                                <rect key="frame" x="157" y="98" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ADF-kg-TJB"/>
+                                    <constraint firstAttribute="height" constant="60" id="GD8-ep-XiH"/>
+                                </constraints>
+                                <state key="normal" image="redIcon.png"/>
+                                <connections>
+                                    <action selector="changeIconButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Fp-9D-JjD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-yQ-rmb">
+                                <rect key="frame" x="157" y="191" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Emn-bQ-wqd"/>
+                                    <constraint firstAttribute="height" constant="60" id="xNt-es-JNj"/>
+                                </constraints>
+                                <state key="normal" image="blackIcon.png"/>
+                                <connections>
+                                    <action selector="changeIconButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pL4-9E-KvX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-Jm-qOD">
+                                <rect key="frame" x="157" y="284" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Ve-k3-2Z7"/>
+                                    <constraint firstAttribute="width" constant="60" id="z3Y-xQ-bAV"/>
+                                </constraints>
+                                <state key="normal" image="blueIcon.png"/>
+                                <connections>
+                                    <action selector="changeIconButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h8h-OM-u78"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSH-BU-W81">
+                                <rect key="frame" x="124" y="370" width="127" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.17104009440000001" blue="0.20566573069999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="Jop-Pk-KOB"/>
+                                    <constraint firstAttribute="height" constant="40" id="URq-2x-04l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="还原">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToPrimaryIconAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aj7-FO-Ny4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y4Y-7e-NlL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="78" id="D3W-Uf-72W"/>
+                            <constraint firstItem="Y4Y-7e-NlL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Frq-Eg-lzd"/>
+                            <constraint firstItem="xSH-BU-W81" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KN8-fX-lBX"/>
+                            <constraint firstItem="R7g-Jm-qOD" firstAttribute="top" secondItem="6Ff-yQ-rmb" secondAttribute="bottom" constant="33" id="Prd-DB-Y2e"/>
+                            <constraint firstItem="R7g-Jm-qOD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QQe-h7-e8Z"/>
+                            <constraint firstItem="6Ff-yQ-rmb" firstAttribute="top" secondItem="Y4Y-7e-NlL" secondAttribute="bottom" constant="33" id="Ske-HU-BgP"/>
+                            <constraint firstItem="xSH-BU-W81" firstAttribute="top" secondItem="R7g-Jm-qOD" secondAttribute="bottom" constant="26" id="p1J-EY-F4g"/>
+                            <constraint firstItem="6Ff-yQ-rmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rtV-aJ-BmU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4" y="136.28185907046478"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blackIcon.png" width="60" height="60"/>
+        <image name="blueIcon.png" width="60" height="60"/>
+        <image name="redIcon.png" width="60" height="60"/>
+    </resources>
 </document>

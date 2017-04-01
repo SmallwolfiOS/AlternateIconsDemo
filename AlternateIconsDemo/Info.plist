@@ -13,11 +13,18 @@
 		</dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>blackIcon2</key>
+			<key>blueIcon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>blackIcon2</string>
+					<string>blueIcon</string>
+				</array>
+			</dict>
+			<key>blackIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>blackIcon</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
@@ -34,7 +41,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>zh_CN</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

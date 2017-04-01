@@ -15,10 +15,10 @@
 		965B55371E8E565D00845FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965B55351E8E565D00845FBE /* LaunchScreen.storyboard */; };
 		965B55421E8E56B600845FBE /* redIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B553E1E8E56B600845FBE /* redIcon@3x.png */; };
 		965B55431E8E56B600845FBE /* redIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B553F1E8E56B600845FBE /* redIcon@2x.png */; };
-		965B55481E8E5A0700845FBE /* blackIcon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B55461E8E5A0700845FBE /* blackIcon2@2x.png */; };
-		965B55491E8E5A0700845FBE /* blackIcon2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B55471E8E5A0700845FBE /* blackIcon2@3x.png */; };
 		965B554C1E8E732400845FBE /* blueIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B554A1E8E732400845FBE /* blueIcon@2x.png */; };
 		965B554D1E8E732400845FBE /* blueIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B554B1E8E732400845FBE /* blueIcon@3x.png */; };
+		96DD107F1E8F5422003F59C1 /* blackIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96DD107D1E8F5422003F59C1 /* blackIcon@2x.png */; };
+		96DD10801E8F5422003F59C1 /* blackIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96DD107E1E8F5422003F59C1 /* blackIcon@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		965B55381E8E565D00845FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965B553E1E8E56B600845FBE /* redIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redIcon@3x.png"; sourceTree = "<group>"; };
 		965B553F1E8E56B600845FBE /* redIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redIcon@2x.png"; sourceTree = "<group>"; };
-		965B55461E8E5A0700845FBE /* blackIcon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackIcon2@2x.png"; sourceTree = "<group>"; };
-		965B55471E8E5A0700845FBE /* blackIcon2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackIcon2@3x.png"; sourceTree = "<group>"; };
 		965B554A1E8E732400845FBE /* blueIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueIcon@2x.png"; sourceTree = "<group>"; };
 		965B554B1E8E732400845FBE /* blueIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueIcon@3x.png"; sourceTree = "<group>"; };
+		96DD107D1E8F5422003F59C1 /* blackIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackIcon@2x.png"; sourceTree = "<group>"; };
+		96DD107E1E8F5422003F59C1 /* blackIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackIcon@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +80,9 @@
 				965B55381E8E565D00845FBE /* Info.plist */,
 				965B553E1E8E56B600845FBE /* redIcon@3x.png */,
 				965B553F1E8E56B600845FBE /* redIcon@2x.png */,
-				965B55461E8E5A0700845FBE /* blackIcon2@2x.png */,
-				965B55471E8E5A0700845FBE /* blackIcon2@3x.png */,
 				965B554A1E8E732400845FBE /* blueIcon@2x.png */,
+				96DD107D1E8F5422003F59C1 /* blackIcon@2x.png */,
+				96DD107E1E8F5422003F59C1 /* blackIcon@3x.png */,
 				965B554B1E8E732400845FBE /* blueIcon@3x.png */,
 				965B55271E8E565D00845FBE /* Supporting Files */,
 			);
@@ -158,9 +158,9 @@
 			files = (
 				965B55421E8E56B600845FBE /* redIcon@3x.png in Resources */,
 				965B55371E8E565D00845FBE /* LaunchScreen.storyboard in Resources */,
-				965B55481E8E5A0700845FBE /* blackIcon2@2x.png in Resources */,
+				96DD10801E8F5422003F59C1 /* blackIcon@3x.png in Resources */,
 				965B55341E8E565D00845FBE /* Assets.xcassets in Resources */,
-				965B55491E8E5A0700845FBE /* blackIcon2@3x.png in Resources */,
+				96DD107F1E8F5422003F59C1 /* blackIcon@2x.png in Resources */,
 				965B554C1E8E732400845FBE /* blueIcon@2x.png in Resources */,
 				965B55321E8E565D00845FBE /* Main.storyboard in Resources */,
 				965B55431E8E56B600845FBE /* redIcon@2x.png in Resources */,
@@ -336,6 +336,7 @@
 				965B553D1E8E565D00845FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
